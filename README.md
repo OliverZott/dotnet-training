@@ -1,1 +1,1 @@
-# dotnet-training
+# Various dotnet and C# Samples

@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ", "RabbitMQ", "{89CD4CDA-4C0A-4F8F-BB3F-27AF50E371DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloWorld", "HelloWorld", "{7A53EA5D-23CB-45A9-9E01-123167F1F264}"
+	ProjectSection(SolutionItems) = preProject
+		RabbitMQ\HelloWorld\README.md = RabbitMQ\HelloWorld\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{DC9696D5-EF28-4EA3-B050-DC6BCF8E08A3}"
 EndProject
@@ -16,6 +19,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Send", "RabbitMQ\HelloWorld\Send\Send.csproj", "{B41DE80C-4901-4A92-B25D-D44AB2733843}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Receive", "RabbitMQ\HelloWorld\Receive\Receive.csproj", "{B1AD49E3-6E94-4899-93EA-D6DC896A99FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B7DF61B4-7324-4290-98A0-621235406F7F}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
