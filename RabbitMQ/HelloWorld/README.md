@@ -22,6 +22,9 @@
 ## Run
 
 - `docker start <containerid> -a`
+or
+- `docker run --rm -d -p 15672:15672 -p 5672:5672 --name my_rabbit rabbitmq:3-management` with `--hostname my-rabbit_db` for specific db name
+- `docker attach <contianerId>`
 - `docker logs <containerid>`
 - `http://localhost:15672/`
 - start 2 terminals:

@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Library", "Assemblies\Assembly.Library\Assembly.Library.csproj", "{785B7BDF-1A73-468C-B8FE-B53B96F4089F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Send", "RabbitMQ\HelloWorld\Send\Send.csproj", "{B41DE80C-4901-4A92-B25D-D44AB2733843}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Send", "RabbitMQ\HelloWorld\Send\Send.csproj", "{B41DE80C-4901-4A92-B25D-D44AB2733843}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Receive", "RabbitMQ\HelloWorld\Receive\Receive.csproj", "{B1AD49E3-6E94-4899-93EA-D6DC896A99FE}"
 EndProject
@@ -24,6 +24,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UltimateHelloWorld", "UltimateHelloWorld", "{05F0AF83-9155-449E-BFAD-168F02C74793}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimateHelloWorld", "UltimateHelloWorld\UltimateHelloWorld.csproj", "{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +54,10 @@ Global
 		{B1AD49E3-6E94-4899-93EA-D6DC896A99FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1AD49E3-6E94-4899-93EA-D6DC896A99FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1AD49E3-6E94-4899-93EA-D6DC896A99FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +68,7 @@ Global
 		{785B7BDF-1A73-468C-B8FE-B53B96F4089F} = {DC9696D5-EF28-4EA3-B050-DC6BCF8E08A3}
 		{B41DE80C-4901-4A92-B25D-D44AB2733843} = {7A53EA5D-23CB-45A9-9E01-123167F1F264}
 		{B1AD49E3-6E94-4899-93EA-D6DC896A99FE} = {7A53EA5D-23CB-45A9-9E01-123167F1F264}
+		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C} = {05F0AF83-9155-449E-BFAD-168F02C74793}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {600776B7-9352-4074-8496-7B796BFF9083}
