@@ -15,7 +15,11 @@ Best practices - and why they are not always good
 ## Steps
 
 - .NET 6 Console App
+- Create Class Library (e.g. for business logic)) `HelloWorldLibrary`
+    - Define Data: `CustomText.json` (properties - CopyIfNever)
+    - Model
 - 
 
 ## Remarks
 
+- Resource file - copy to output

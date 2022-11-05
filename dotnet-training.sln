@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UltimateHelloWorld", "Ultim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimateHelloWorld", "UltimateHelloWorld\UltimateHelloWorld.csproj", "{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldLibrary", "HelloWorldLibrary\HelloWorldLibrary.csproj", "{89554CB1-67C9-4C03-87D1-CAA0AF256343}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89554CB1-67C9-4C03-87D1-CAA0AF256343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89554CB1-67C9-4C03-87D1-CAA0AF256343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89554CB1-67C9-4C03-87D1-CAA0AF256343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89554CB1-67C9-4C03-87D1-CAA0AF256343}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{B41DE80C-4901-4A92-B25D-D44AB2733843} = {7A53EA5D-23CB-45A9-9E01-123167F1F264}
 		{B1AD49E3-6E94-4899-93EA-D6DC896A99FE} = {7A53EA5D-23CB-45A9-9E01-123167F1F264}
 		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C} = {05F0AF83-9155-449E-BFAD-168F02C74793}
+		{89554CB1-67C9-4C03-87D1-CAA0AF256343} = {05F0AF83-9155-449E-BFAD-168F02C74793}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {600776B7-9352-4074-8496-7B796BFF9083}
