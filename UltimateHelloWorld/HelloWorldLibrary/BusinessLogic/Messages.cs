@@ -13,9 +13,9 @@ public class Messages : IMessages
         _logger = logger;
     }
 
-    public string Greeting(string langage)
+    public string Greeting(string language)
     {
-        return LookUpCustomText(nameof(Greeting), langage);
+        return LookUpCustomText(nameof(Greeting), language);
     }
 
     private string LookUpCustomText(string key, string language)
@@ -30,14 +30,14 @@ public class Messages : IMessages
             List<CustomText>? messageSets = JsonSerializer
                .Deserialize<List<CustomText>>(File.ReadAllText("CustomText.json"), options);
 
-            var customTexts = messageSets?.Where(x => x.Language == language);
+            var customText = messageSets?.Where(x => x.Language == language);
 
-            if (customTexts is null)
+            if (!customText.Any())
             {
                 throw new NullReferenceException($"Language ({language}) not found.");
             }
 
-            return customTexts.First().Translations[key];
+            return customText.First().Translations[key];
         }
         catch (Exception e)
         {

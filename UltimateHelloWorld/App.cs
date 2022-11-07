@@ -19,9 +19,9 @@ public class App
 
         foreach (var arg in args)
         {
-            if (arg.ToLower().StartsWith("-lang"))
+            if (arg.ToLower().StartsWith("lang"))
             {
-                lang = arg.Substring(6);
+                lang = arg.Substring(5);
                 break;
             }
         }

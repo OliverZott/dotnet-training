@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "UltimateHelloWorld": {
+      "commandName": "Project",
+      "commandLineArgs": "lang=en"
+    }
+  }
+}
