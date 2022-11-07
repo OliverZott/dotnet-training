@@ -8,11 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="HelloWorldLibrary\**" />
+    <Compile Remove="HelloWorldTests\**" />
+    <EmbeddedResource Remove="HelloWorldLibrary\**" />
+    <EmbeddedResource Remove="HelloWorldTests\**" />
+    <None Remove="HelloWorldLibrary\**" />
+    <None Remove="HelloWorldTests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HelloWorldLibrary\HelloWorldLibrary.csproj" />
+    <ProjectReference Include="HelloWorldLibrary\HelloWorldLibrary.csproj" />
   </ItemGroup>
 
 </Project>
