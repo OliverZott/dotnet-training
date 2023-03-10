@@ -26,15 +26,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UltimateHelloWorld", "UltimateHelloWorld", "{05F0AF83-9155-449E-BFAD-168F02C74793}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltimateHelloWorld", "UltimateHelloWorld\UltimateHelloWorld.csproj", "{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldLibrary", "UltimateHelloWorld\HelloWorldLibrary\HelloWorldLibrary.csproj", "{2B7EC710-D196-492E-B1A6-340F476C5879}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldTests", "UltimateHelloWorld\HelloWorldTests\HelloWorldTests.csproj", "{DEC18C27-D71F-4F5F-A69F-B5E44BEBD189}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{4AEFF3DD-6192-424C-AC24-832FEECD2F6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "Docker\WebApplication1\WebApplication1.csproj", "{CDCBDA48-00C4-408D-9178-D8957732F028}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +71,10 @@ Global
 		{DEC18C27-D71F-4F5F-A69F-B5E44BEBD189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEC18C27-D71F-4F5F-A69F-B5E44BEBD189}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEC18C27-D71F-4F5F-A69F-B5E44BEBD189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCBDA48-00C4-408D-9178-D8957732F028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCBDA48-00C4-408D-9178-D8957732F028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCBDA48-00C4-408D-9178-D8957732F028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCBDA48-00C4-408D-9178-D8957732F028}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +88,7 @@ Global
 		{D20F2DA7-827C-4315-BCE4-BFEE8BAD4D0C} = {05F0AF83-9155-449E-BFAD-168F02C74793}
 		{2B7EC710-D196-492E-B1A6-340F476C5879} = {05F0AF83-9155-449E-BFAD-168F02C74793}
 		{DEC18C27-D71F-4F5F-A69F-B5E44BEBD189} = {05F0AF83-9155-449E-BFAD-168F02C74793}
+		{CDCBDA48-00C4-408D-9178-D8957732F028} = {4AEFF3DD-6192-424C-AC24-832FEECD2F6D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {600776B7-9352-4074-8496-7B796BFF9083}
