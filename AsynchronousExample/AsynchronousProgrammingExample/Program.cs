@@ -25,8 +25,8 @@ public static class Program
         //
         // await Task.WhenAll(res1, res2, res3, res4);
 
-        RunAndTimeAllTasks();
         RunAndTimeAllSyncTasks();
+        RunAndTimeAllTasks();
     }
 
 
@@ -53,19 +53,23 @@ public static class Program
         SyncService.Task4();
     }
 
+
+    private static void RunAndTimeAllSyncTasks()
+    {
+        Console.WriteLine("\nRun All Tasks synchronous.\n -------------------------------------------------");
+        var sw = Stopwatch.StartNew();
+        RunAllSyncTasks();
+        sw.Stop();
+        Console.WriteLine($"RunAllSyncTasks took {sw.ElapsedMilliseconds} ms");
+    }
+
     private static void RunAndTimeAllTasks()
     {
+        Console.WriteLine("\nRun All Tasks asynchronous.\n -------------------------------------------------");
         var sw = Stopwatch.StartNew();
         RunAllTasks();
         sw.Stop();
         Console.WriteLine($"RunAllTasks took {sw.ElapsedMilliseconds} ms");
     }
 
-    private static void RunAndTimeAllSyncTasks()
-    {
-        var sw = Stopwatch.StartNew();
-        RunAllSyncTasks();
-        sw.Stop();
-        Console.WriteLine($"RunAllSyncTasks took {sw.ElapsedMilliseconds} ms");
-    }
 }
