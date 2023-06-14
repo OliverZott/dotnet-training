@@ -42,6 +42,36 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "Docker\W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsynchronousProgrammingExample", "AsynchronousExample\AsynchronousProgrammingExample\AsynchronousProgrammingExample.csproj", "{FC337EE4-AB6D-4EF9-8459-970A17792E3E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileWatcher", "FileWatcher", "{EC739549-79A1-45FD-9949-D877705D387E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileWatcher", "FileWatcher\FileWatcher\FileWatcher.csproj", "{E8487F51-9D68-4946-A4E9-E9240897099C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileWatcher.Utils", "FileWatcher\FileWatcher.Utils\FileWatcher.Utils.csproj", "{6A8ADAEA-CDA5-4696-A028-32F7655466D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{09EF87FC-03CB-48BD-8A9F-E9823B513832}"
+	ProjectSection(SolutionItems) = preProject
+		FileWatcher\data\files.json = FileWatcher\data\files.json
+		FileWatcher\data\FileStorage.json = FileWatcher\data\FileStorage.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDF", "PDF", "{02033AA4-2C2D-45FC-ABDC-2DB4B2B102DC}"
+	ProjectSection(SolutionItems) = preProject
+		FileWatcher\data\PDF\test1.pdf = FileWatcher\data\PDF\test1.pdf
+		FileWatcher\data\PDF\test2.pdf = FileWatcher\data\PDF\test2.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Astronomy", "Astronomy", "{209B3417-2053-47F9-B018-02F8744E62CB}"
+	ProjectSection(SolutionItems) = preProject
+		FileWatcher\data\PDF\Astronomy\Astro_sheet1.pdf = FileWatcher\data\PDF\Astronomy\Astro_sheet1.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paleontology", "Paleontology", "{9F2830EB-3893-46B6-AEF3-77BBEABA5D5E}"
+	ProjectSection(SolutionItems) = preProject
+		FileWatcher\data\PDF\Paleontology\poaleo1.pdf = FileWatcher\data\PDF\Paleontology\poaleo1.pdf
+		FileWatcher\data\PDF\Paleontology\poaleo2.pdf = FileWatcher\data\PDF\Paleontology\poaleo2.pdf
+		FileWatcher\data\PDF\Paleontology\poaleo3.pdf = FileWatcher\data\PDF\Paleontology\poaleo3.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +114,14 @@ Global
 		{FC337EE4-AB6D-4EF9-8459-970A17792E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC337EE4-AB6D-4EF9-8459-970A17792E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC337EE4-AB6D-4EF9-8459-970A17792E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8487F51-9D68-4946-A4E9-E9240897099C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8487F51-9D68-4946-A4E9-E9240897099C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8487F51-9D68-4946-A4E9-E9240897099C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8487F51-9D68-4946-A4E9-E9240897099C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A8ADAEA-CDA5-4696-A028-32F7655466D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A8ADAEA-CDA5-4696-A028-32F7655466D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A8ADAEA-CDA5-4696-A028-32F7655466D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A8ADAEA-CDA5-4696-A028-32F7655466D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +137,12 @@ Global
 		{DEC18C27-D71F-4F5F-A69F-B5E44BEBD189} = {05F0AF83-9155-449E-BFAD-168F02C74793}
 		{CDCBDA48-00C4-408D-9178-D8957732F028} = {4AEFF3DD-6192-424C-AC24-832FEECD2F6D}
 		{FC337EE4-AB6D-4EF9-8459-970A17792E3E} = {EF0FD49E-B25E-4B25-9AB9-841F354B32B1}
+		{E8487F51-9D68-4946-A4E9-E9240897099C} = {EC739549-79A1-45FD-9949-D877705D387E}
+		{6A8ADAEA-CDA5-4696-A028-32F7655466D2} = {EC739549-79A1-45FD-9949-D877705D387E}
+		{09EF87FC-03CB-48BD-8A9F-E9823B513832} = {EC739549-79A1-45FD-9949-D877705D387E}
+		{02033AA4-2C2D-45FC-ABDC-2DB4B2B102DC} = {09EF87FC-03CB-48BD-8A9F-E9823B513832}
+		{209B3417-2053-47F9-B018-02F8744E62CB} = {02033AA4-2C2D-45FC-ABDC-2DB4B2B102DC}
+		{9F2830EB-3893-46B6-AEF3-77BBEABA5D5E} = {02033AA4-2C2D-45FC-ABDC-2DB4B2B102DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {600776B7-9352-4074-8496-7B796BFF9083}
