@@ -30,38 +30,28 @@ public static class ConfigReader
 
         while (reader.Read())
         {
-            // TODO: Refactor!
-            switch (reader.NodeType)
+            if (reader.NodeType is not XmlNodeType.Element) continue;
+            if (reader.Name == "configuration")
             {
-                case XmlNodeType.Element: // The node is an element.
-                    if (reader.Name == "configuration")
+                while (reader.MoveToNextAttribute())
+                {
+                    switch (reader.Name)
                     {
-                        while (reader.MoveToNextAttribute())
-                        {
-                            switch (reader.Name)
-                            {
-                                case "filesPath":
-                                    path = reader.Value;
-                                    break;
-                                case "jsonOutput":
-                                    jsonPath = reader.Value;
-                                    break;
-                            }
-                        }
+                        case "filesPath":
+                            path = reader.Value;
+                            break;
+                        case "jsonOutput":
+                            jsonPath = reader.Value;
+                            break;
                     }
-                    if (reader.Name == "extension")
-                    {
-                        reader.MoveToNextAttribute();
-                        extensions.Add(reader.Value);
-                    }
-                    break;
-                case XmlNodeType.Text: //Text in each element. REMOVE in future
-                    Console.WriteLine(reader.Name);
-                    Console.WriteLine(reader.Value);
-                    break;
-                case XmlNodeType.EndElement: //End of the element.
-                    break;
+                }
             }
+            if (reader.Name == "extension")
+            {
+                reader.MoveToNextAttribute();
+                extensions.Add(reader.Value);
+            }
+
         }
 
         return new Configuration(path, jsonPath, extensions);
