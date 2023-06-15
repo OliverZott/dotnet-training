@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Assembly.Library</id>
+		<version>1.0.4</version>
+		<description>A sample package for Assembly.Executable</description>
+		<authors>Oliver Zott</authors>
+		<owners>MIT License</owners>
+		<dependencies>
+			<group targetFramework="net6.0">
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src=".\lib\net6.0\Assembly.Library.dll" target=".\lib\net6.0\Assembly.Library.dll" />
+	</files>
+</package>

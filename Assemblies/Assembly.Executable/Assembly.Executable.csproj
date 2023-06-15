@@ -1,14 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
+	<!--Nuget Package Reference-->
+	<ItemGroup>
+		<PackageReference Include="Assembly.Library" Version="1.0.4" />
+	</ItemGroup>
+
+	<!--Project Reference-->
+	<!--<ItemGroup>
     <ProjectReference Include="..\Assembly.Library\Assembly.Library.csproj" />
-  </ItemGroup>
+  </ItemGroup>-->
 
 </Project>
