@@ -1,0 +1,44 @@
+[
+  {
+    "Name": "blub.txt",
+    "Topic": "data",
+    "Type": ".txt",
+    "Date": "2023-06-15T15:54:19.8955602+02:00"
+  },
+  {
+    "Name": "test1.pdf",
+    "Topic": "PDF",
+    "Type": ".pdf",
+    "Date": "2023-06-14T14:48:41.726897+02:00"
+  },
+  {
+    "Name": "test2.pdf",
+    "Topic": "PDF",
+    "Type": ".pdf",
+    "Date": "2023-06-14T14:48:41.726897+02:00"
+  },
+  {
+    "Name": "Astro_sheet1.pdf",
+    "Topic": "Astronomy",
+    "Type": ".pdf",
+    "Date": "2023-06-14T14:48:41.7425211+02:00"
+  },
+  {
+    "Name": "poaleo1.pdf",
+    "Topic": "Paleontology",
+    "Type": ".pdf",
+    "Date": "2023-06-14T14:48:41.7425211+02:00"
+  },
+  {
+    "Name": "poaleo2.pdf",
+    "Topic": "Paleontology",
+    "Type": ".pdf",
+    "Date": "2023-06-14T14:48:41.7425211+02:00"
+  },
+  {
+    "Name": "poaleo3.pdf",
+    "Topic": "Paleontology",
+    "Type": ".pdf",
+    "Date": "2023-06-14T14:48:41.7425211+02:00"
+  }
+]

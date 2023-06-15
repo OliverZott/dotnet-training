@@ -1,7 +1,10 @@
 # .NET Examples
 
 - Asemblies
+	- using project reference
+	- using nuget reference
 - Asynchronouse Programming
 - Docker
-- MessageBroker: RabbitMQ
+- FileWatcher
+- RabbitMQ (MessageBroker)
 - Ultimate Hello World

@@ -13,6 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloWorld", "HelloWorld", 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{DC9696D5-EF28-4EA3-B050-DC6BCF8E08A3}"
+	ProjectSection(SolutionItems) = preProject
+		Assemblies\README.md = Assemblies\README.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Library", "Assemblies\Assembly.Library\Assembly.Library.csproj", "{785B7BDF-1A73-468C-B8FE-B53B96F4089F}"
 EndProject
@@ -43,6 +46,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsynchronousProgrammingExample", "AsynchronousExample\AsynchronousProgrammingExample\AsynchronousProgrammingExample.csproj", "{FC337EE4-AB6D-4EF9-8459-970A17792E3E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileWatcher", "FileWatcher", "{EC739549-79A1-45FD-9949-D877705D387E}"
+	ProjectSection(SolutionItems) = preProject
+		FileWatcher\app.config = FileWatcher\app.config
+		FileWatcher\README.md = FileWatcher\README.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileWatcher", "FileWatcher\FileWatcher\FileWatcher.csproj", "{E8487F51-9D68-4946-A4E9-E9240897099C}"
 EndProject
@@ -50,7 +57,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileWatcher.Utils", "FileWa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{09EF87FC-03CB-48BD-8A9F-E9823B513832}"
 	ProjectSection(SolutionItems) = preProject
-		FileWatcher\data\files.json = FileWatcher\data\files.json
+		FileWatcher\data\blub.txt = FileWatcher\data\blub.txt
 		FileWatcher\data\FileStorage.json = FileWatcher\data\FileStorage.json
 	EndProjectSection
 EndProject
@@ -71,6 +78,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paleontology", "Paleontolog
 		FileWatcher\data\PDF\Paleontology\poaleo2.pdf = FileWatcher\data\PDF\Paleontology\poaleo2.pdf
 		FileWatcher\data\PDF\Paleontology\poaleo3.pdf = FileWatcher\data\PDF\Paleontology\poaleo3.pdf
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileWatcher.Config", "FileWatcher\FileWatcher.Config\FileWatcher.Config.csproj", "{91165D91-1C63-4E31-896C-8D0E0E58CCEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -122,6 +131,10 @@ Global
 		{6A8ADAEA-CDA5-4696-A028-32F7655466D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A8ADAEA-CDA5-4696-A028-32F7655466D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A8ADAEA-CDA5-4696-A028-32F7655466D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91165D91-1C63-4E31-896C-8D0E0E58CCEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91165D91-1C63-4E31-896C-8D0E0E58CCEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91165D91-1C63-4E31-896C-8D0E0E58CCEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91165D91-1C63-4E31-896C-8D0E0E58CCEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,6 +156,7 @@ Global
 		{02033AA4-2C2D-45FC-ABDC-2DB4B2B102DC} = {09EF87FC-03CB-48BD-8A9F-E9823B513832}
 		{209B3417-2053-47F9-B018-02F8744E62CB} = {02033AA4-2C2D-45FC-ABDC-2DB4B2B102DC}
 		{9F2830EB-3893-46B6-AEF3-77BBEABA5D5E} = {02033AA4-2C2D-45FC-ABDC-2DB4B2B102DC}
+		{91165D91-1C63-4E31-896C-8D0E0E58CCEB} = {EC739549-79A1-45FD-9949-D877705D387E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {600776B7-9352-4074-8496-7B796BFF9083}

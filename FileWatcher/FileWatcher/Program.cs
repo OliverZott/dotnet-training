@@ -1,23 +1,18 @@
-﻿using FileWatcher.Utils;
+﻿using FileWatcher.Config;
+using FileWatcher.Utils;
 
-var fileStore = new FileObjectStore();
-var filePaths = fileStore.GetAllFilesFromDirectory();
+
+var config = ConfigReader.ReadConfiguration();
+
+
+// Save files to Json
+var fileStore = new FileObjectStore(config);
 var fileObjects = fileStore.GetFileObjects();
-
-//foreach (var filePath in filePaths)
-//{
-//    Console.WriteLine(filePath);
-//}
-
-
-//foreach (var fileObject in fileObjects)
-//{
-//    Console.WriteLine(fileObject);
-//}
-
-var fileJsonStore = new FileJsonStore();
+var fileJsonStore = new FileJsonStore(config);
 fileJsonStore.CreateJsonStore(fileObjects);
 
+
+// Get files from json
 var fileObjectsFromJson = fileJsonStore.ReadJsonStore().Result;
 
 foreach (var fileObject in fileObjectsFromJson)

@@ -1,26 +1,30 @@
-﻿using System.Text.Json;
+﻿using FileWatcher.Config;
+using System.Text.Json;
 
 namespace FileWatcher.Utils;
 public class FileJsonStore
 {
-    // TODO: move to config file
-    private const string Path = "C:\\Train\\FileWatcherExample\\data";
+    private readonly string _path;
 
-    public string FileList;
+    public FileJsonStore(Configuration configuration)
+    {
+        _path = configuration.JsonPath;
+    }
+
 
     public void CreateJsonStore(List<FileObject> fileObjects)
     {
-        const string fileName = $"{Path}\\FileStorage.json";
+        var fileName = $"{_path}\\FileStorage.json";
 
         var options = new JsonSerializerOptions { WriteIndented = true };
         using var createStream = File.Create(fileName);
         JsonSerializer.Serialize(createStream, fileObjects, options);
     }
 
-    // TODO: Generate List<FileObject> from Json store
+
     public async Task<List<FileObject>?> ReadJsonStore()
     {
-        const string fileName = $"{Path}\\FileStorage.json";
+        var fileName = $"{_path}\\FileStorage.json";
 
         await using var openStream = File.OpenRead(fileName);
         var fileObjects = await JsonSerializer.DeserializeAsync<List<FileObject>>(openStream);
