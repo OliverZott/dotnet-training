@@ -3,26 +3,13 @@
 namespace FileWatcher.Config;
 
 
-public class Configuration
+public class ConfigReader : IConfigReader
 {
-    public Configuration(string path, string jsonPath, List<string> extensionList)
+    private const string Url = "C:\\Train\\dotnet-training\\FileWatcher\\app.config";
+
+    public Configuration ReadConfiguration()
     {
-        JsonPath = jsonPath;
-        Path = path;
-        Extensions = extensionList;
-    }
-
-    public string Path { get; }
-    public string JsonPath { get; }
-    public List<string> Extensions { get; }
-}
-
-public static class ConfigReader
-{
-
-    public static Configuration ReadConfiguration()
-    {
-        var reader = new XmlTextReader("C:\\Train\\dotnet-training\\FileWatcher\\app.config");
+        var reader = new XmlTextReader(Url);
 
         var path = string.Empty;
         var jsonPath = string.Empty;

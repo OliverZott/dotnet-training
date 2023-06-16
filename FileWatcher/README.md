@@ -24,3 +24,4 @@ Goal is a small tool to monitor a folder (with subfolders) and obtain a list of 
 - file monitoring (watcher)
 - logging (log4net)
   - simple, just show whats happening and log errors 
+- UnitTests
