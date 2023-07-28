@@ -1,8 +1,8 @@
 ﻿using FileWatcher.Config;
 using FileWatcher.Utils;
 
-
-var config = ConfigReader.ReadConfiguration();
+var confReader = new ConfigReader(); 
+var config = confReader.ReadConfiguration();
 
 
 // Save files to Json
