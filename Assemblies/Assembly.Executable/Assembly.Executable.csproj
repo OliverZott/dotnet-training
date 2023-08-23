@@ -11,10 +11,8 @@
 	<ItemGroup>
 		<PackageReference Include="Assembly.Library" Version="1.0.4" />
 	</ItemGroup>
-
-	<!--Project Reference-->
-	<!--<ItemGroup>
-    <ProjectReference Include="..\Assembly.Library\Assembly.Library.csproj" />
-  </ItemGroup>-->
+	<ItemGroup>
+		<ProjectReference Include="..\Assembly.Library\Assembly.Library.csproj" />
+	</ItemGroup>
 
 </Project>

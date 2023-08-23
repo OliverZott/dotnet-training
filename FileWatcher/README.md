@@ -25,3 +25,5 @@ Goal is a small tool to monitor a folder (with subfolders) and obtain a list of 
 - logging (log4net)
   - simple, just show whats happening and log errors 
 - UnitTests
+- - build --> publish (exe + config)
+	- config: compile none / copy if newer

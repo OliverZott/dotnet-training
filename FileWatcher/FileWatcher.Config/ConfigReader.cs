@@ -15,6 +15,9 @@ public class ConfigReader : IConfigReader
         var jsonPath = string.Empty;
         var extensions = new List<string>();
 
+
+        // TODO Linq to xml
+        // TODO: eleganter -> (de)serializer in Configuration class
         while (reader.Read())
         {
             if (reader.NodeType is not XmlNodeType.Element) continue;
@@ -41,7 +44,7 @@ public class ConfigReader : IConfigReader
 
         }
 
-        return new Configuration(path, jsonPath, extensions);
+        return new Configuration(jsonPath, path, extensions);
     }
 
 }

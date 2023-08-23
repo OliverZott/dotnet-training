@@ -2,6 +2,9 @@
 
 public class Configuration
 {
+
+    // TODO use standard serializer/de-serializer here (e.g. xplanung)
+    // - decorator?? [serializable]
     public Configuration(string jsonPath, string path, List<string> extensions)
     {
         JsonPath = jsonPath;
