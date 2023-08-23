@@ -1,7 +1,6 @@
 ﻿using FileWatcher.Config;
 using FileWatcher.Utils;
 
-
 var configReader = new ConfigReader();
 var config = configReader.ReadConfiguration();
 
