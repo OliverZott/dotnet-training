@@ -26,10 +26,11 @@ public static class AsyncService
     }
 
 
-    public static async Task Task2()
+    public static async Task<AsyncResult2> Task2()
     {
         Console.WriteLine("Task 2");
         await Task.Delay(5000);
+        return new AsyncResult2();
     }
 
     public static async Task<AsyncResult3> Task3()
@@ -39,9 +40,10 @@ public static class AsyncService
         return new AsyncResult3();
     }
 
-    public static async Task Task4()
+    public static async Task<AsyncResult4> Task4()
     {
         Console.WriteLine("Task 4");
         await Task.Delay(5000);
+        return new AsyncResult4();
     }
 }
