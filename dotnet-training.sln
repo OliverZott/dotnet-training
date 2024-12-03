@@ -82,6 +82,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking", "DailyTrainig\Benchmarking\Benchmarking.csproj", "{C739E523-8171-4D98-AFF1-415FDBC6D8E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DailyTraining", "DailyTraining", "{D0F27116-0F68-49C4-A799-457B7F34F64F}"
+	ProjectSection(SolutionItems) = preProject
+		DailyTrainig\README.md = DailyTrainig\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
