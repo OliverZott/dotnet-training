@@ -86,6 +86,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DailyTraining", "DailyTrain
 		DailyTrainig\README.md = DailyTrainig\README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "DailyTrainig\CSharp\CSharp.csproj", "{5E78243E-4AFB-497C-A56C-EE49FE8FD6CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -144,6 +146,10 @@ Global
 		{C739E523-8171-4D98-AFF1-415FDBC6D8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C739E523-8171-4D98-AFF1-415FDBC6D8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C739E523-8171-4D98-AFF1-415FDBC6D8E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E78243E-4AFB-497C-A56C-EE49FE8FD6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E78243E-4AFB-497C-A56C-EE49FE8FD6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E78243E-4AFB-497C-A56C-EE49FE8FD6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E78243E-4AFB-497C-A56C-EE49FE8FD6CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +173,7 @@ Global
 		{91165D91-1C63-4E31-896C-8D0E0E58CCEB} = {EC739549-79A1-45FD-9949-D877705D387E}
 		{238884AC-62CA-42BC-B164-7397A0CC23F4} = {EF0FD49E-B25E-4B25-9AB9-841F354B32B1}
 		{C739E523-8171-4D98-AFF1-415FDBC6D8E9} = {D0F27116-0F68-49C4-A799-457B7F34F64F}
+		{5E78243E-4AFB-497C-A56C-EE49FE8FD6CD} = {D0F27116-0F68-49C4-A799-457B7F34F64F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {600776B7-9352-4074-8496-7B796BFF9083}
