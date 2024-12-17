@@ -5,6 +5,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="lib\" />
+    <Folder Include="lib\net9.0\" />
   </ItemGroup>
+
+
+	<Target Name="CopyDlls" AfterTargets="Build">
+		<ItemGroup>
+			<MyAssemblies Include="$(OutputPath)$(AssemblyName).dll" />
+		</ItemGroup>
+		<Copy SourceFiles="@(MyAssemblies)" DestinationFolder="$(SolutionDir)\Assemblies\Assembly.Library\lib\net9.0\" />
+		<Message Importance="high" Text="Copied @(MyAssemblies) to $(SolutionDir)\Assemblies\Assembly.Library\lib\net9.0" />
+	</Target>
+	
 </Project>
