@@ -18,14 +18,22 @@ using BenchmarkDotNet.Running;
 
 namespace CSharp;
 
+
+#if !DEBUG
 [HtmlExporter]
 [ThreadingDiagnoser]
 [MemoryDiagnoser]
 [Config(typeof(CustomConfig))]  // Custom Config
+#endif
 public class SpanBenchmark
 {
 
     private byte[] byteArray;
+
+    public SpanBenchmark()
+    {
+        Setup();
+    }
 
     [GlobalSetup]
     public void Setup()
@@ -33,14 +41,16 @@ public class SpanBenchmark
         byteArray = new byte[10000000];
         for (int i = 0; i < byteArray.Length; i++)
         {
-            byteArray[i] = (byte)i;
+            byteArray[i] = (byte)(i % 256);  // Initialize with some data
         }
     }
 
+
+    // Benchmarks for accessing
     [Benchmark]
     public void CheckIfAllocationTestWorks()
     {
-        byte[] newArray = new byte[byteArray.Length]; // Allocate memory
+        byte[] newArray = new byte[byteArray.Length];  // Allocate memory
         for (int i = 0; i < byteArray.Length; i++)
         {
             newArray[i] = byteArray[i];
@@ -50,19 +60,24 @@ public class SpanBenchmark
     [Benchmark]
     public void AccessUsingArray()
     {
-        for (int i = 0; i < byteArray.Length; i++)
+        for (int i = 0; i < byteArray.Length; i += 1000)
         {
-            byte value = byteArray[i];
+            byte[] newArray = new byte[1000];
+            Array.Copy(byteArray, i, newArray, 0, 1000);  // Allocate memory
         }
     }
 
     [Benchmark]
     public void AccessUsingSpan()
     {
-        Span<byte> span = new Span<byte>(byteArray);
-        for (int i = 0; i < byteArray.Length; i++)
+        for (int i = 0; i < byteArray.Length; i += 1000)
         {
-            byte value = span[i];
+            //Span<byte> span = new Span<byte>(byteArray);
+            Span<byte> span = byteArray.AsSpan(i, 1000);  // No allocation
+            for (int j = 0; j < span.Length; j++)
+            {
+                byte value = span[j];
+            }
         }
     }
 
@@ -77,10 +92,30 @@ public class SpanBenchmark
     }
 
 
+    public static void RunSpanExample()
+    {
+#if DEBUG
+        RunBenchmarks();
+#else
+        RunDebugExample();
+#endif
+    }
+
+
     public static void RunBenchmarks()
     {
-        var summary = BenchmarkRunner.Run<SpanBenchmark>();
+        _ = BenchmarkRunner.Run<SpanBenchmark>();
     }
+
+    public static void RunDebugExample()
+    {
+        var sb = new SpanBenchmark();
+        sb.Setup();
+        sb.AccessUsingArray();
+        sb.AccessUsingSpan();
+        sb.AccessUsingReadOnlySpan();
+    }
+
 }
 
 

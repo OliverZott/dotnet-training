@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>CSharp.SpanBenchmark-20241218-124220</title>
+<title>CSharp.SpanBenchmark-20241218-150253</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -22,12 +22,13 @@ Intel Core i7-14700K, 1 CPU, 28 logical and 20 physical cores
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>Method              </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Op/s</th><th>Gen0</th><th>Completed Work Items</th><th>Lock Contentions</th><th>Gen1</th><th>Gen2</th><th>Allocated</th>
+<thead><tr><th>Method              </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Op/s</th><th>Completed Work Items</th><th>Lock Contentions</th><th>Gen0</th><th>Gen1</th><th>Gen2</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>CheckIfAllocationTestWorks</td><td>3.739 ms</td><td>0.0367 ms</td><td>0.0343 ms</td><td>267.4</td><td>394.5313</td><td>-</td><td>-</td><td>394.5313</td><td>394.5313</td><td>10000150 B</td>
-</tr><tr><td>AccessUsingArray</td><td>1.836 ms</td><td>0.0028 ms</td><td>0.0023 ms</td><td>544.7</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1 B</td>
-</tr><tr><td>AccessUsingSpan</td><td>1.804 ms</td><td>0.0042 ms</td><td>0.0039 ms</td><td>554.3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
-</tr><tr><td>AccessUsingReadOnlySpan</td><td>1.803 ms</td><td>0.0057 ms</td><td>0.0050 ms</td><td>554.5</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1 B</td>
+</thead><tbody><tr><td>CheckIfAllocationTestWorks</td><td>3,484.9 &mu;s</td><td>45.97 &mu;s</td><td>43.00 &mu;s</td><td>287.0</td><td>-</td><td>-</td><td>394.5313</td><td>394.5313</td><td>394.5313</td><td>10000149 B</td>
+</tr><tr><td>AccessUsingArray</td><td>295.3 &mu;s</td><td>2.95 &mu;s</td><td>2.76 &mu;s</td><td>3,386.9</td><td>-</td><td>-</td><td>593.2617</td><td>-</td><td>-</td><td>10240000 B</td>
+</tr><tr><td>AccessUsingSpan</td><td>1,863.5 &mu;s</td><td>4.82 &mu;s</td><td>4.51 &mu;s</td><td>536.6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1 B</td>
+</tr><tr><td>AccessUsingReadOnlySpan</td><td>1,800.4 &mu;s</td><td>3.52 &mu;s</td><td>3.30 &mu;s</td><td>555.4</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1 B</td>
+</tr><tr><td>ProcessUsingArray</td><td>1,827.5 &mu;s</td><td>28.01 &mu;s</td><td>26.20 &mu;s</td><td>547.2</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>1 B</td>
 </tr></tbody></table>
 </body>
 </html>
