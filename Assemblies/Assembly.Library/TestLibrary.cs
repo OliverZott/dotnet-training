@@ -2,14 +2,9 @@
 
 public class TestLibrary
 {
-    private readonly DateTime dateTimeNow;
+    private readonly DateTime _dateTimeNow = DateTime.Now;
 
-    public TestLibrary()
-    {
-        dateTimeNow = DateTime.Now;
-    }
-
-    public string FormattedDate => dateTimeNow.ToString("yyyy-MM-dd HH:mm:ss");
+    private string FormattedDate => _dateTimeNow.ToString("yyyy-MM-dd HH:mm:ss");
 
     public string TestLibraryMessage => $"Hello from inside TestLibrary on {FormattedDate}";
 }
