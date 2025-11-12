@@ -20,12 +20,12 @@ public static class Receive
 
         var consumer = new AsyncEventingBasicConsumer(channel);
 
-        consumer.ReceivedAsync += (model, ea) =>
+        consumer.ReceivedAsync += static async (model, ea) =>
         {
             byte[] body = ea.Body.ToArray();
             string message = Encoding.UTF8.GetString(body);
             Console.WriteLine($"Received {message}");
-            return ValueTask.CompletedTask;
+            await Task.CompletedTask;
         };
         
         await channel.BasicConsumeAsync(queue: "hello",
