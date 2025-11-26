@@ -365,3 +365,6 @@ FodyWeavers.xsd
 
 # JetBrains
 .idea
+
+# Artifacts (O.Z. 2025-11-26)
+*.dll
