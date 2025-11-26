@@ -95,6 +95,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{8D5B3768-1D1A-43C7-8D96-57FA108DCC2C}"
 	ProjectSection(SolutionItems) = preProject
 		Scripts\delegate_script.cs = Scripts\delegate_script.cs
+		Scripts\README.md = Scripts\README.md
+		Scripts\scripts_linux.cs = Scripts\scripts_linux.cs
+		Scripts\scripts_windows.cs = Scripts\scripts_windows.cs
 	EndProjectSection
 EndProject
 Global
