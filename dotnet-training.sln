@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11222.15
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assembly.Executable", "Assemblies\Assembly.Executable\Assembly.Executable.csproj", "{E716CDD9-AB88-4C43-98BB-5D3CF3DFA45E}"
 EndProject
@@ -82,9 +82,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking", "DailyTrainig\Benchmarking\Benchmarking.csproj", "{C739E523-8171-4D98-AFF1-415FDBC6D8E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{D0F27116-0F68-49C4-A799-457B7F34F64F}"
-	ProjectSection(SolutionItems) = preProject
-		DailyTrainig\README.md = DailyTrainig\README.md
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "DailyTrainig\CSharp\CSharp.csproj", "{5E78243E-4AFB-497C-A56C-EE49FE8FD6CD}"
 EndProject
